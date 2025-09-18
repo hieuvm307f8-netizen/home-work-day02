@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+main {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: rgb(223, 220, 215);
+  margin-top: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+nav i {
+  display: inline-block;
+  font-size: 30px;
+  color: orangered;
+  margin-right: 10px;
+}
+
+.nav-link:hover {
+  color: orange;
+  border-bottom: 1px solid orange;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: orange;
+}
+
+nav .menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.btn-group {
+  margin-right: 10px;
+}
+
+.btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: orange;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 8px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-login {
+  font-size: 16px;
+  font-size: 14px;
+  color: grey;
+  font-weight: 400;
+  margin-right: 8px;
+}
+
+.btn-login:hover {
+    color: orange;
+}
+
+section {
+    margin-top: 120px;
+    display: flex;
+    gap: 20px;
+}
+
+.new-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.new-item img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.title:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 20px;
+}
+
+
+aside {
+    width: 500px;
+    height: 700px;
+    margin-top: 15px;
+}

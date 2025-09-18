@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Shop</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <style>
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            header a {
+                text-decoration: underline;
+                color: orange;
+                margin-right: 20px;
+            }
+            form {
+                margin: 0 auto ;
+                width: 350px;
+            }
+
+            fieldset {
+                border: 1px solid orange;
+                border-radius: 8px;
+                padding: 16px;
+                margin-bottom: 16px;
+            }
+
+            legend {
+                padding: 0 8px;
+                font-weight: bold;
+                color: orangered;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: 600;
+                color: orange;
+            }
+
+            .form-group {
+                margin-top: 16px;
+            }
+
+            input {
+                outline: none;
+                width: 100%;
+                padding: 8px 12px;
+                border: none;
+                border-bottom: 2px solid orange;
+                font-size: 14px;
+            }
+
+            .radio-groups {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+
+            .tick-btn {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 14px;
+                color: grey;
+            }
+
+            .label {
+                margin: 0;
+                color: grey;
+                white-space: nowrap;
+            }
+
+            .btn-groups {
+                text-align: center;
+            }
+            
+            button {
+                margin-top: 16px;
+                padding: 8px 16px;
+                border: none;
+                background-color: orangered;
+                color: white;
+                font-weight: 600;
+                border-radius: 4px;
+                cursor: pointer;                
+            }
+            
+            .reset {
+                background-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <!-- Header -->
+            <header>
+                <h1 style="color: orangered; padding: 8px 14px;">Đăng Ký</h1>
+                <a href="/index.html">Truy cập trang chủ không cần đăng ký.</a>
+            </header>
+
+            <!-- main-content -->
+            <section>
+                <form action>
+                    <fieldset>
+                        <legend>Thông tin tài khoản</legend>
+                        <div class="form-group">
+                            <label for="name">Họ và tên</label>
+                            <input type="text" name id="name"
+                                placeholder="Nhập họ và tên...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Hòm thư</label>
+                            <input type="text" name id="message"
+                                placeholder="Nhập họ và tên...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Mật khẩu</label>
+                            <input type="text" name id="password"
+                                placeholder="******">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password-confirm">Xác nhận mật
+                                khẩu</label>
+                            <input type="text" name id="password-confirm"
+                                placeholder="******">
+                        </div>
+                    </fieldset>
+
+                    <form action>
+                        <fieldset>
+                            <legend>Thông tin cá nhân</legend>
+                            <div class="form-group">
+                                <label for="name">Giới tính</label>
+                                <div class="radio-groups">
+                                    <div class="tick-btn">
+                                        <input type="radio" name="gender"
+                                            id="male">
+                                        <label class="label"
+                                            for="male">Nam</label>
+                                    </div>
+                                    <div class="tick-btn">
+                                        <input type="radio" name="gender"
+                                            id="female">
+                                        <label class="label"
+                                            for="female">Nữ</label>
+                                    </div>
+                                    <div class="tick-btn">
+                                        <input type="radio" name="gender"
+                                            id="other">
+                                        <label class="label"
+                                            for="other">Khác</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="name">Sở thích</label>
+                                <div class="radio-groups">
+                                    <div class="tick-btn">
+                                        <input type="checkbox" name id>
+                                        <label class="label" for>Thể
+                                            thao</label>
+                                    </div>
+                                    <div class="tick-btn">
+                                        <input type="checkbox" name id>
+                                        <label class="label" for>Âm nhạc</label>
+                                    </div>
+                                    <div class="tick-btn">
+                                        <input type="checkbox" name id>
+                                        <label class="label" for>Du lịch</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="birthday">Ngày sinh</label>
+                                <input type="date" name id="birthday">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="birthday">Quốc gia</label>
+                                <select name id>
+                                    <option value>Việt Nam</option>
+                                    <option value>Nhật Bản</option>
+                                    <option value>Hàn Quốc</option>
+                                    <option value>Trung Quốc</option>
+                                    <option value>Mỹ</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại</label>
+                                <input type="tel" id="phone"
+                                    placeholder="+84"
+                                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address">Địa chỉ liên hệ</label>
+                                <textarea id="address" name="w3review" rows="4"
+                                    cols="40" placeholder="put your address..."></textarea>
+                            </div>
+
+                            <div class="btn-groups">
+                                <button type="submit">Register</button>
+                                <button type="reset" class="reset">Reset</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+            </main>
+        </body>
+    </html>
